@@ -765,6 +765,13 @@ section .container .right .buttons button:hover {
     .container .right {
         width: 100% !important;
     }
+
+    section .container .block1{
+        top: -8% !important;
+    }
+    section .container .block2{
+        top: 60% !important;
+    }
 }
 
 
@@ -803,14 +810,25 @@ section .container .right .buttons button:hover {
 
 
 @media screen and (max-width:400px) {
-
+  
+    section .container .left .block{
+        background: #ffffffc9 !important;
+    }
+    section .container .left .block1{
+        top: -11% !important;
+        width: 150px !important;
+    }
     /* html{font-size: 70% ;} */
     section .container .left .block2 {
         left: 10% !important;
+        top: 60% !important;
+        left: 45% !important;
     }
+
 
     .right {
         padding: 10px !important;
+        margin-top: 1rem;
     }
 
     .right h2 {
@@ -819,7 +837,9 @@ section .container .right .buttons button:hover {
 
     .right .buttons {
         justify-content: center !important;
+        gap: 12px;
     }
+    .right .buttons button{font-size: 13px !important;}
 
     .right .fhed,
     .right .shed {
@@ -832,4 +852,13 @@ section .container .right .buttons button:hover {
         width: 100%;
         padding: 6px;
     }
+}
+
+@media screen and (max-width:300px){
+  
+    /* html{font-size: 70% ;} */
+    section .container .left .block2 {
+        left: 20% !important;
+    }
+
 }
