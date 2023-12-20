@@ -22,3 +22,4 @@ icon.addEventListener('click', ()=> {
     }
 });
 // The script ends here
+

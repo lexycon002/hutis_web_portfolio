@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Hutis web portfolio</title>
 </head>
+
 <body>
     <!-- This section was designed by woman dev----Samuella Aglago -->
     <!-- Samuella Aglago Index.html page begins here -->
@@ -72,7 +74,7 @@
                     <img src="images/handshake.png" alt="">
                 </div>
                 <div class="desc">
-                    <h3>300<span>+</span></h3>
+                    <h3 class="counter_target">300<span>+</span></h3>
                     <p>Happy Customers</p>
                 </div>
             </div>
@@ -81,7 +83,7 @@
                     <img src="images/smiley.png" alt="">
                 </div>
                 <div class="desc">
-                    <h3>150<span>+</span></h3>
+                    <h3 class="counter_target">150<span>+</span></h3>
                     <p>Projects Completed</p>
                 </div>
             </div>
@@ -90,7 +92,7 @@
                     <img src="images/achievementss.png" alt="">
                 </div>
                 <div class="desc">
-                    <h3>30<span>+</span></h3>
+                    <h3 class="counter_target">30<span>+</span></h3>
                     <p>Features & Awards</p>
                 </div>
             </div>
@@ -101,7 +103,8 @@
             <div class="desc">
                 <div class="left">
                     <p>
-                        We Provide The Best <br> <span class="dig">Digital</span> Solution For Your Business<br> <span class="dev">Development</span>
+                        We Provide The Best <br> <span class="dig">Digital</span> Solution For Your Business<br> <span
+                            class="dev">Development</span>
                     </p>
                     <!-- <img src="images/draw.png" alt=""> -->
                 </div>
@@ -120,10 +123,10 @@
             </div>
         </div>
     </section>
-<!-- Samuella Aglago Index.html page ends here -->
+    <!-- Samuella Aglago Index.html page ends here -->
 
-<!--This section was design by Muhammad Hasnain Ghazna Khan  -->
-<section class="anyclassname">
+    <!--This section was design by Muhammad Hasnain Ghazna Khan  -->
+    <section class="anyclassname">
         <div class="container">
 
             <!-- the left started  -->
@@ -203,6 +206,32 @@
         </div>
     </section>
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
+
+    <script>
+        const counter_target = document.querySelectorAll(".counter_target");
+        console.log(counter_target[0])
+
+
+        const counter = (range, element,time) => {
+            let enc = 0;
+            setInterval(() => {
+                if (enc >= range) {
+                    clearInterval();
+                    // enc = 0;
+                }
+                else {
+                    enc = enc +7;
+                    element.innerHTML = enc
+                }
+            }, time);
+        }
+
+        counter(300,counter_target[0],150)
+        counter(150,counter_target[1],180)
+        counter(30,counter_target[2],150)
+
+    </script>
 </body>
+
 </html>
